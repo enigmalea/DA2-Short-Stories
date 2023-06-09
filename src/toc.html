@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Table of Contents</title>
+
+    <link
+      href="publication.json"
+      rel="publication"
+      type="application/ld+json"
+    />
+    <link rel="stylesheet" href="../src/css/typography.css" />
+    <link rel="stylesheet" href="../src/css/page-settings.css" />
+
+    <style>
+      .toc_entry {
+        display: flex;
+        font-family: var(--body);
+        margin-bottom: 6mm;
+				align-items: center;
+      }
+
+      .story {
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+			.toc_entry .author {
+				white-space: nowrap;
+				vertical-align: bottom;
+			}
+
+      .story::after {
+        content: " ..................................................................................";
+      }
+
+      .toc_entry .author::before {
+        content: " ..................................................................................";
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="margin-bottom: 9mm;">Table of Contents</h2>
+    <div class="toc_entry">
+      <div class="story">
+        <a href="anders.html">Anders</a>
+      </div>
+      <div class="author"> Jennifer Hepler</div>
+    </div>
+    <div class="toc_entry">
+      <div class="story">
+        <a href="aveline.html">Aveline</a>
+      </div>
+      <div class="author"> Lukas Kristjanson</div>
+    </div>
+    <div class="toc_entry">
+      <div class="story">
+        <a href="fenris.html">Fenris</a>
+      </div>
+      <div class="author"> David Gaider</div>
+    </div>
+    <div class="toc_entry">
+      <div class="story">
+        <a href="isabela.html">Isabela</a>
+      </div>
+      <div class="author"> Sheryl Chee</div>
+    </div>
+    <div class="toc_entry">
+      <div class="story">
+        <a href="merrill.html">Merrill</a>
+      </div>
+      <div class="author"> Mary Kirby</div>
+    </div>
+    <div class="toc_entry">
+      <div class="story">
+        <a href="sebastian.html">Sebastian</a>
+      </div>
+      <div class="author"> Jennifer Hepler</div>
+    </div>
+    <div class="toc_entry">
+      <div class="story">
+        <a href="varric.html">Varric</a>
+      </div>
+      <div class="author"> Mary Kirby</div>
+    </div>
+    <div class="blank"></div>
+  </body>
+</html>

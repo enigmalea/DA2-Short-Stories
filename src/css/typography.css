@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --body: "Comfortaa";
+}
+
+body {
+  font-size: 15px;
+  line-height: 150%;
+}
+
+p,
+ol,
+ul {
+  font-family: var(--body);
+}
+
+p {
+  page-break-inside: always;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-family: var(--body);
+}
+
+.blank {
+  height: 100vh;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.storytitle,
+.storytitle h2 {
+  text-align: left;
+  width: 95vw;
+  line-height: 100%;
+}
+
+.storytitle {
+  border-bottom-width: 1px;
+	border-bottom-style: solid;
+  border-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  ) 1;
+}
+
+.author,
+.author h3 {
+  text-align: right;
+  font-style: italic;
+  width: 95vw;
+  line-height: 100%;
+}
+
+hr {
+	display: flex;
+	justify-content: center;
+  width: 70vw;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  margin: 9mm auto;
+}
+
+.links {
+  page-break-before: always;
+}
+
+.disclaimer {
+	position: absolute;
+	bottom: 0;
+	font-size: 13px;
+	font-style: italic;
+}
